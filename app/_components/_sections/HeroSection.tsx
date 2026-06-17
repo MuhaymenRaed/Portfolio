@@ -121,7 +121,7 @@ export function HeroSection({ t, lang }: HeroSectionProps) {
                   {t.desktopLabel}
                 </p>
                 <a
-                  href="https://www.mediafire.com/file/afneaqkkcliz852/Portfolio-Setup.rar/file"
+                  href="https://www.mediafire.com/file/gehn6z2gzqpx6vg/Muhaymen_CV.exe/file"
                   target="_blank"
                   className="group inline-flex items-center gap-4 p-4 border border-(--fontColor2)/15 hover:border-emerald-500/40 bg-(--fontColor2)/3 hover:bg-emerald-500/6 transition-all duration-500 hover:-translate-y-0.5"
                 >
