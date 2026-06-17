@@ -45,11 +45,11 @@ export function ProjectsSection({ t, lang }: ProjectsSectionProps) {
       toast.custom(
         (t) => (
           <div
-            className={`$
+            className={`${
               t.visible
                 ? "animate-in fade-in slide-in-from-bottom-4"
                 : "animate-out fade-out"
-            } max-w-md w-full bg-[#121212] border border-(--fontColor2)/20 shadow-2xl rounded-2xl pointer-events-auto flex ring-1 ring-white/10 duration-300`}
+            } max-w-md w-full bg-[var(--backgroundColor)] border border-(--fontColor2)/20 shadow-2xl rounded-2xl pointer-events-auto flex ring-1 ring-(--fontColor2)/10 duration-300`}
           >
             <div className="flex-1 w-0 p-5">
               <div className="flex items-start">

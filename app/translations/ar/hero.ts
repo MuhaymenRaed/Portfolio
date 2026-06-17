@@ -11,4 +11,8 @@ export const hero = {
   desktopLabel: "متاح أيضًا كتطبيق أصلي",
   desktopTitle: "محفظة سطح المكتب",
   desktopMeta: "ويندوز · إلكترون · يعمل بدون إنترنت",
+  cvLabel: "السيرة الذاتية",
+  cvEn: "النسخة الإنجليزية",
+  cvAr: "النسخة العربية",
+  cvMeta: "PDF",
 } as const;

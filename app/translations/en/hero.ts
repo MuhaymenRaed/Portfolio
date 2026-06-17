@@ -11,4 +11,8 @@ export const hero = {
   desktopLabel: "Also available as a native app",
   desktopTitle: "Portfolio Desktop",
   desktopMeta: "Windows · Electron · Runs offline",
+  cvLabel: "Résumé",
+  cvEn: "English CV",
+  cvAr: "Arabic CV",
+  cvMeta: "PDF",
 } as const;

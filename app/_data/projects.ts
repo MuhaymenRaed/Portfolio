@@ -111,9 +111,9 @@ export const projects: Project[] = [
       "React Hot Toast ",
       "Framer Motion",
     ],
-    isFinished: false,
+    isFinished: true,
     imageUrl: "/orphanageManagmentSystem.png",
-    link: "/#projects",
+    link: "https://orphange-management-system.netlify.app/overview",
     githubUrl: "https://github.com/MuhaymenRaed/Orphan-Management-System.git",
     figmaUrl:
       "https://www.figma.com/design/ufogIJL2xzAWN0107jlfeR/Orphan-Management-System?node-id=1-55356&t=PNQwniU4zV4jqvuu-1",
@@ -127,6 +127,82 @@ export const projects: Project[] = [
         "تصميم لوحة تحكم مركزية باستخدام TypeScript وSupabase، تتميز بالمزامنة الفورية وضبط الوصول الآمن المستند إلى الأدوار وواجهة مستخدم بديهية لإدخال البيانات المعقدة.",
       impact:
         "خفض جذري في الأعباء الإدارية وتحسين سلامة البيانات لـ 100٪ من سجلات المقيمين.",
+    },
+  },
+  {
+    title: "Prayer Manager",
+    description:
+      "A cross-platform mobile application built with React Native and Expo that helps users manage, track, and elevate their daily prayer routines — with location-aware prayer times, smart notifications, streak tracking, and a fully personalized spiritual experience.",
+    problem:
+      "Most prayer apps are static and impersonal — they show times but fail to motivate consistency, adapt to individual spiritual journeys, or build meaningful long-term habits.",
+    solution:
+      "Built a feature-rich mobile app with GPS-precise prayer times, fully customizable notification sounds and vibration patterns, streak-based habit tracking with visual statistics, seamless multi-language switching, home screen widgets for quick logging, and customizable themes — all designed to make daily prayer a natural, personal ritual.",
+    impact:
+      "Transforms prayer management from a passive reminder into an active habit-building experience, giving users both the tools and the motivation to maintain lasting consistency.",
+    techStack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "React Context",
+      "Device Notifications API",
+      "i18n Localization",
+      "Local Storage",
+      "Haptic Feedback",
+    ],
+    isFinished: false,
+    imageUrl: "/prayerManager.png",
+    link: "/#projects",
+    githubUrl: "https://github.com/MuhaymenRaed/Prayer_Manger",
+    figmaUrl:
+      "https://www.figma.com/make/iKuwZfVo8xr7U9BZE3K6mA/Islamic-Prayer-Manager-App",
+    ar: {
+      title: "مدير الصلاة",
+      description:
+        "تطبيق موبايل متعدد المنصات مبني بـ React Native وExpo، يساعد المستخدمين على إدارة وتتبع وتعزيز روتين صلواتهم اليومية — بأوقات صلاة دقيقة حسب الموقع الجغرافي، وإشعارات ذكية، وتتبع المواظبة، وتجربة روحية مخصصة بالكامل.",
+      problem:
+        "معظم تطبيقات الصلاة تعرض المواقيت فحسب ولا تحفّز على الاستمرارية — إنها أدوات ثابتة لا تتكيف مع الرحلة الروحية الفردية ولا تبني عادات راسخة على المدى البعيد.",
+      solution:
+        "بناء تطبيق موبايل متكامل بأوقات صلاة دقيقة تعتمد على GPS، مع أصوات إشعار وأنماط اهتزاز قابلة للتخصيص الكامل، وتتبع المواظبة بإحصاءات بصرية وسلاسل متعاقبة، ودعم متعدد اللغات مع تبديل سلس داخل التطبيق، وويدجت للشاشة الرئيسية، وثيمات قابلة للتخصيص — كل ذلك لجعل الصلاة اليومية طقسًا شخصيًا سلسًا.",
+      impact:
+        "يحوّل إدارة الصلاة من تذكير سلبي إلى تجربة فعّالة لبناء العادات، ويمنح المستخدمين الأدوات والدافع للحفاظ على الاستمرارية الدائمة.",
+    },
+  },
+  {
+    title: "Rofoof",
+    description:
+      "A full-featured e-commerce platform for handcrafted goods — stickers, brooches, 3D-printed products, and posters — with deep search, real-time order tracking, a powerful admin dashboard, dark/light mode, and bilingual support.",
+    problem:
+      "Independent creators selling handcrafted and 3D-printed merchandise lacked a tailored storefront capable of showcasing their products elegantly while managing orders, inventory, and the complete customer journey end-to-end.",
+    solution:
+      "Building a polished Next.js e-commerce experience with intuitive product discovery, deep search and filtering, real-time order tracking, a fully featured admin dashboard with complete store control, user wishlists, detailed profile preferences, and a bilingual (Arabic/English) interface with dark/light mode.",
+    impact:
+      "Provides independent creators with a production-grade digital storefront that elevates brand perception and delivers a seamless shopping experience from discovery to delivery.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "React Query",
+      "shadcn/ui",
+      "Framer Motion",
+    ],
+    isFinished: false,
+    imageUrl: "/rofoof.png",
+    link: "/#projects",
+    figmaUrl:
+      "https://www.figma.com/make/Q5RhGkThghKUWSNRfjf9fl/E-Commerce-Platform-Design?t=BMA0BbPWRoQ4qOWF-1",
+    ar: {
+      title: "روفوف",
+      description:
+        "منصة تجارة إلكترونية متكاملة للمنتجات اليدوية — ملصقات وبروشات ومطبوعات ثلاثية الأبعاد وبوسترات — مع بحث عميق وتتبع طلبات حي ولوحة تحكم إدارية متكاملة ووضع فاتح/داكن ودعم ثنائي اللغة.",
+      problem:
+        "يفتقر المبدعون المستقلون الذين يبيعون منتجات يدوية ومطبوعة ثلاثية الأبعاد إلى متجر رقمي مخصص قادر على عرض منتجاتهم بأناقة مع إدارة الطلبات والمخزون وتجربة العميل الكاملة.",
+      solution:
+        "بناء تجربة تجارة إلكترونية متكاملة بـ Next.js مع واجهة اكتشاف منتجات سهلة، وبحث وتصفية عميقَين، وتتبع طلبات في الوقت الفعلي، ولوحة تحكم إدارية شاملة مع تحكم كامل في المتجر، وقوائم رغبات، وملفات مستخدم تفصيلية، وواجهة ثنائية اللغة مع وضع فاتح/داكن.",
+      impact:
+        "يمنح المبدعين المستقلين واجهة رقمية احترافية جاهزة للإنتاج، ترفع صورة العلامة التجارية وتقدم تجربة تسوق سلسة من الاكتشاف حتى التوصيل.",
     },
   },
 ];

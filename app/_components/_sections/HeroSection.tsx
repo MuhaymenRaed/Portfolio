@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Mail, Download, Monitor } from "lucide-react";
+import { ArrowUpRight, Mail, Download, Monitor, FileText } from "lucide-react";
 import ImageWithFallback from "@/app/_components/_image/ImageWithFallback";
 import { useEffect, useState } from "react";
 import type { Translations, Locale } from "@/app/translations";
@@ -71,6 +71,47 @@ export function HeroSection({ t, lang }: HeroSectionProps) {
                 <Mail className="w-4 h-4" />
                 {t.contact}
               </button>
+            </div>
+
+            {/* CV Downloads */}
+            <div className="mt-10 pt-10 border-t border-(--fontColor2)/10">
+              <p className="text-[10px] tracking-[0.2em] uppercase text-(--fontColor2)/50 mb-4 font-bold">
+                {t.cvLabel}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="/cv-en.pdf"
+                  download="Muhaymen_Raed_CV.pdf"
+                  className="group inline-flex items-center gap-3 px-5 py-3 border border-(--fontColor2)/15 hover:border-accent/40 bg-(--fontColor2)/3 hover:bg-accent/6 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <FileText className="w-4 h-4 text-(--fontColor2) group-hover:text-accent transition-colors shrink-0" />
+                  <div className="flex flex-col gap-1">
+                    <span className="text-sm font-medium text-(--fontColor) leading-none">
+                      {t.cvEn}
+                    </span>
+                    <span className="text-[10px] text-(--fontColor2)/50 leading-none">
+                      {t.cvMeta}
+                    </span>
+                  </div>
+                  <Download className="w-3.5 h-3.5 text-(--fontColor2) group-hover:text-accent group-hover:animate-bounce transition-colors ml-1" />
+                </a>
+                <a
+                  href="/cv-ar.pdf"
+                  download="مهيمن_رائد_السيرة_الذاتية.pdf"
+                  className="group inline-flex items-center gap-3 px-5 py-3 border border-(--fontColor2)/15 hover:border-accent/40 bg-(--fontColor2)/3 hover:bg-accent/6 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <FileText className="w-4 h-4 text-(--fontColor2) group-hover:text-accent transition-colors shrink-0" />
+                  <div className="flex flex-col gap-1">
+                    <span className="text-sm font-medium text-(--fontColor) leading-none">
+                      {t.cvAr}
+                    </span>
+                    <span className="text-[10px] text-(--fontColor2)/50 leading-none">
+                      {t.cvMeta}
+                    </span>
+                  </div>
+                  <Download className="w-3.5 h-3.5 text-(--fontColor2) group-hover:text-accent group-hover:animate-bounce transition-colors ml-1" />
+                </a>
+              </div>
             </div>
 
             {/* Windows-only desktop app download */}
