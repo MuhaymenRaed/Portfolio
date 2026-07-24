@@ -4,7 +4,10 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import type { Viewport } from "next";
+import { JsonLd } from "@/app/_components/JsonLd";
 import "@/app/styles/globals.css";
+
+const SITE_URL = "https://muhaymen-raed-portfolio.vercel.app";
 type LayoutProps = {
   children: ReactNode;
 };
@@ -27,6 +30,7 @@ type LayoutProps = {
 // };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Muhaymen Raed",
   description:
     "Front-end developer specializing in React, TypeScript, and modern web technologies. Explore my portfolio of interactive web applications and projects.",
@@ -135,9 +139,52 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+// Person: reconciles every spelling/translation of the name to one identity.
+const personSchema = {
+  "@type": "Person",
+  name: "Muhaymen Raed",
+  alternateName: [
+    "Muhaymen Raed",
+    "مهيمن رائد",
+    "مهيمن رائد العزاوي",
+    "MuhaymenRaed",
+    "Mohayman Rayed",
+    "Mohyaman Rayed",
+    "Moheamin",
+    "Muhaymin Raed",
+    "Muhaymen Raid",
+    "Muhaymen Raied",
+    "Muhayman Raed",
+    "Mohaymen Raed",
+    "مهيمن",
+    "رائد",
+  ],
+  jobTitle: "Front-End Developer",
+  url: SITE_URL,
+  image: `${SITE_URL}/myself.png`,
+  sameAs: ["https://github.com/MuhaymenRaed", "https://www.linkedin.com/in/muhaymenraed"],
+  knowsAbout: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Web development"],
+  address: { "@type": "PostalAddress", addressCountry: "IQ", addressLocality: "Baghdad" },
+};
+
+const websiteSchema = {
+  "@type": "WebSite",
+  name: "Muhaymen Raed — Portfolio",
+  alternateName: ["Muhaymen Raed", "مهيمن رائد", "MuhaymenRaed portfolio"],
+  url: SITE_URL,
+  inLanguage: ["en", "ar"],
+  author: { "@type": "Person", name: "Muhaymen Raed" },
+};
+
 export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <head>
+        {/* Structured data — maps name spellings/translations to one identity */}
+        <JsonLd
+          data={{ "@context": "https://schema.org", "@graph": [personSchema, websiteSchema] }}
+        />
+      </head>
       <body className="bg-(--backgroundColor) font-inter text-(--fontColor)">
         <ThemeProvider>
           {/* Elegant Toast Configuration */}
