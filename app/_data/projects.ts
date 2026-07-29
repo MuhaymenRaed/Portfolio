@@ -176,7 +176,7 @@ export const projects: Project[] = [
     problem:
       "Independent creators selling handcrafted and 3D-printed merchandise lacked a tailored storefront capable of showcasing their products elegantly while managing orders, inventory, and the complete customer journey end-to-end.",
     solution:
-      "Building a polished Next.js e-commerce experience with intuitive product discovery, deep search and filtering, real-time order tracking, a fully featured admin dashboard with complete store control, user wishlists, detailed profile preferences, and a bilingual (Arabic/English) interface with dark/light mode.",
+      "Built a polished Next.js e-commerce experience with intuitive product discovery, deep search and filtering, real-time order tracking, a fully featured admin dashboard with complete store control, user wishlists, detailed profile preferences, and a bilingual (Arabic/English) interface with dark/light mode.",
     impact:
       "Provides independent creators with a production-grade digital storefront that elevates brand perception and delivers a seamless shopping experience from discovery to delivery.",
     techStack: [
@@ -188,9 +188,9 @@ export const projects: Project[] = [
       "shadcn/ui",
       "Framer Motion",
     ],
-    isFinished: false,
+    isFinished: true,
     imageUrl: "/rofoof.png",
-    link: "/#projects",
+    link: "https://www.rofoof.net/",
     figmaUrl:
       "https://www.figma.com/make/Q5RhGkThghKUWSNRfjf9fl/E-Commerce-Platform-Design?t=BMA0BbPWRoQ4qOWF-1",
     ar: {
