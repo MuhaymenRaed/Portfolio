@@ -11,7 +11,7 @@ export const hero = {
   desktopLabel: "متاح أيضًا كتطبيق أصلي",
   desktopTitle: "محفظة سطح المكتب",
   desktopMeta: "ويندوز · إلكترون · يعمل بدون إنترنت",
-  badgeTitle: "متاح للعمل",
+  badgeTitle: "مطور واجهات أمامية",
   badgeMeta: "Next.js · Supabase · UI/UX",
   cvLabel: "السيرة الذاتية",
   cvEn: "النسخة الإنجليزية",

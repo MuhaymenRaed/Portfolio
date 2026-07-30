@@ -11,7 +11,7 @@ export const hero = {
   desktopLabel: "Also available as a native app",
   desktopTitle: "Portfolio Desktop",
   desktopMeta: "Windows · Electron · Runs offline",
-  badgeTitle: "Available for Work",
+  badgeTitle: "Front-End Developer",
   badgeMeta: "Next.js · Supabase · UI/UX",
   cvLabel: "Résumé",
   cvEn: "English CV",
