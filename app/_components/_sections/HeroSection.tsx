@@ -1,6 +1,13 @@
 "use client";
 
-import { ArrowUpRight, Mail, Download, Monitor, FileText } from "lucide-react";
+import {
+  ArrowUpRight,
+  Mail,
+  Download,
+  Monitor,
+  FileText,
+  Zap,
+} from "lucide-react";
 import ImageWithFallback from "@/app/_components/_image/ImageWithFallback";
 import { useEffect, useState } from "react";
 import type { Translations, Locale } from "@/app/translations";
@@ -147,14 +154,37 @@ export function HeroSection({ t, lang }: HeroSectionProps) {
             )}
           </div>
           <div className="order-1 lg:order-2">
-            <div className="group relative aspect-[3/4] max-w-md mx-auto lg:ml-auto overflow-hidden">
-              <ImageWithFallback
-                src="/myself.png"
-                alt="Muhaymen Raed"
-                priority
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform-gpu"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40 pointer-events-none"></div>
+            <div className="group relative max-w-md mx-auto lg:ml-auto">
+              {/* Ambient accent glow bleeding out from behind the portrait */}
+              <div
+                aria-hidden
+                className="absolute -inset-8 rounded-[3rem] bg-accent/12 blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+              ></div>
+
+              <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-(--fontColor2)/10">
+                <ImageWithFallback
+                  src="/myself.png"
+                  alt="Muhaymen Raed"
+                  priority
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform-gpu"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40 pointer-events-none"></div>
+              </div>
+
+              {/* Floating role badge, overlapping the portrait's lower inner edge */}
+              <div className="absolute -start-4 bottom-8 flex items-center gap-3 ps-3 pe-5 py-3 rounded-2xl bg-accent shadow-xl shadow-accent/25 group-hover:-translate-y-1 transition-transform duration-500">
+                <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-[#04171a]/15 shrink-0">
+                  <Zap className="w-4 h-4 text-[#04171a]" fill="currentColor" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[11px] font-bold tracking-[0.12em] uppercase text-[#04171a] leading-none">
+                    {t.badgeTitle}
+                  </span>
+                  <span className="text-[10px] font-semibold text-[#04171a]/70 leading-none">
+                    {t.badgeMeta}
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
