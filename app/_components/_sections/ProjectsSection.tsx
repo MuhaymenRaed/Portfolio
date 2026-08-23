@@ -128,7 +128,6 @@ export function ProjectsSection({ t, lang }: ProjectsSectionProps) {
                     }`}
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent z-10" />
                 {!project.isFinished && (
                   <div className="absolute inset-0 flex items-center justify-center z-20">
                     <span className="text-4xl md:text-6xl font-bold tracking-tighter text-[var(--fontColor)]/70 transition-all duration-500 group-hover:scale-90 group-hover:opacity-0">

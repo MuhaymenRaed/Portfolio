@@ -29,6 +29,7 @@ export default function ImageWithFallback({
           alt="Error loading image"
           fill
           sizes="100vw"
+          unoptimized
         />
       </div>
     );
@@ -44,7 +45,7 @@ export default function ImageWithFallback({
       priority={priority}
       fetchPriority={priority ? "high" : "auto"}
       onError={() => setHasError(true)}
-      quality={90}
+      unoptimized
       {...rest}
     />
   );
