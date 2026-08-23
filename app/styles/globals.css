@@ -52,6 +52,20 @@
   --border: rgba(161, 161, 161, 0.18);
 }
 
+.site-navbar {
+  background-color: color-mix(in srgb, var(--backgroundColor) 72%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--fontColor2) 12%, transparent);
+}
+
+.hero-portrait {
+  filter: grayscale(1);
+}
+
+.hero-portrait:hover {
+  filter: grayscale(0);
+}
+
 /* ── Light mode ────────────────────────────────────────────────────────── */
 html.light {
   --backgroundColor: #f9f9fb;

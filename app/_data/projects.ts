@@ -40,7 +40,7 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "Prayer Manager",
+    title: "Al Yaqeen",
     description:
       "A cross-platform mobile application built with React Native and Expo that helps users manage, track, and elevate their daily prayer routines — with location-aware prayer times, smart notifications, streak tracking, and a fully personalized spiritual experience.",
     problem:
@@ -61,14 +61,11 @@ export const projects: Project[] = [
       "Local Storage",
       "Haptic Feedback",
     ],
-    isFinished: false,
-    imageUrl: "/prayerManager.png",
-    link: "/#projects",
-    githubUrl: "https://github.com/MuhaymenRaed/Prayer_Manger",
-    figmaUrl:
-      "https://www.figma.com/make/iKuwZfVo8xr7U9BZE3K6mA/Islamic-Prayer-Manager-App",
+    isFinished: true,
+    imageUrl: "/alyaqeen.jpg",
+    link: "https://play.google.com/store/apps/details?id=app.yaqeen.com",
     ar: {
-      title: "مدير الصلاة",
+      title: "اليقين",
       description:
         "تطبيق موبايل متعدد المنصات مبني بـ React Native وExpo، يساعد المستخدمين على إدارة وتتبع وتعزيز روتين صلواتهم اليومية — بأوقات صلاة دقيقة حسب الموقع الجغرافي، وإشعارات ذكية، وتتبع المواظبة، وتجربة روحية مخصصة بالكامل.",
       problem:
@@ -77,6 +74,42 @@ export const projects: Project[] = [
         "بناء تطبيق موبايل متكامل بأوقات صلاة دقيقة تعتمد على GPS، مع أصوات إشعار وأنماط اهتزاز قابلة للتخصيص الكامل، وتتبع المواظبة بإحصاءات بصرية وسلاسل متعاقبة، ودعم متعدد اللغات مع تبديل سلس داخل التطبيق، وويدجت للشاشة الرئيسية، وثيمات قابلة للتخصيص — كل ذلك لجعل الصلاة اليومية طقسًا شخصيًا سلسًا.",
       impact:
         "يحوّل إدارة الصلاة من تذكير سلبي إلى تجربة فعّالة لبناء العادات، ويمنح المستخدمين الأدوات والدافع للحفاظ على الاستمرارية الدائمة.",
+    },
+  },
+  {
+    title: "Al-Isnad",
+    description:
+      "A bilingual e-commerce platform for telecom and electronics, offering smartphones, accessories, mobile top-up cards, repair booking, trade-ins, order tracking, and a complete admin dashboard.",
+    problem:
+      "Local customers needed a reliable digital storefront where they could discover electronics, compare products, request repairs, trade in devices, and track orders, while the business needed one system to manage inventory, staff, orders, and customer operations.",
+    solution:
+      "Built a production-ready Next.js storefront with Arabic-first RTL support, English localization, advanced product search and filtering, product comparison, wishlists, checkout, repair and trade-in workflows, order tracking, PWA installation, and a role-based administrative dashboard powered by Supabase.",
+    impact:
+      "Gives Al-Isnad a unified digital channel for selling electronics and telecom products across Iraq while improving customer self-service and giving staff complete control over catalogue, orders, repairs, trade-ins, offers, branches, and team permissions.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Supabase",
+      "Tailwind CSS",
+      "next-intl",
+      "Cloudflare R2",
+      "PWA",
+    ],
+    isFinished: false,
+    imageUrl: "/al-isnad.png",
+    link: "https://al-esnad.com/",
+    figmaUrl: "",
+    ar: {
+      title: "الإسناد",
+      description:
+        "منصة تجارة إلكترونية ثنائية اللغة للاتصالات والإلكترونيات، توفر الهواتف الذكية والإكسسوارات وبطاقات الشحن وحجز الإصلاح واستبدال الأجهزة وتتبع الطلبات ولوحة تحكم إدارية متكاملة.",
+      problem:
+        "كان العملاء بحاجة إلى متجر رقمي موثوق لاكتشاف الإلكترونيات ومقارنة المنتجات وطلب الإصلاح واستبدال الأجهزة وتتبع الطلبات، بينما احتاجت الشركة إلى نظام موحد لإدارة المخزون والطلبات والموظفين وعمليات العملاء.",
+      solution:
+        "بناء متجر إلكتروني متكامل باستخدام Next.js مع دعم كامل للعربية واتجاه RTL، واللغة الإنجليزية، والبحث والتصفية المتقدمة، ومقارنة المنتجات، وقوائم الرغبات، وإتمام الطلبات، وحجز الإصلاح، وتقييم الأجهزة، وتتبع الطلبات، بالإضافة إلى لوحة تحكم إدارية تعتمد على Supabase.",
+      impact:
+        "يوفر للإسناد قناة رقمية موحدة لبيع منتجات الاتصالات والإلكترونيات في العراق، ويحسن الخدمة الذاتية للعملاء، ويمنح الموظفين تحكماً كاملاً بالمنتجات والطلبات والإصلاحات والاستبدال والعروض والفروع وصلاحيات الفريق.",
     },
   },
   {

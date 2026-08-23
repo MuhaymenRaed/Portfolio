@@ -166,7 +166,7 @@ export function HeroSection({ t, lang }: HeroSectionProps) {
                   src="/myself.png"
                   alt="Muhaymen Raed"
                   priority
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform-gpu"
+                  className="hero-portrait w-full h-full object-cover transition-all duration-500 transform-gpu"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-40 pointer-events-none"></div>
               </div>
